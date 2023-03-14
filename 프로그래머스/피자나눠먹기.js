@@ -18,3 +18,17 @@ function solution(n) {
     
     return answer;
 }
+
+//피자나눠먹기3
+function solution(slice, n) {
+    //2~10조각까지 잘라줌
+    //10명의사람(n)이 7slices을 먹으려면 2판은 있어야함
+    var answer = 1;
+    while(true){
+        if(n <= slice * answer){
+            break;
+        }
+        answer++
+    }
+    return answer;
+}
